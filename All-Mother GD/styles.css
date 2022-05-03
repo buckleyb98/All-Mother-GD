@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+body {
+  margin: 0;
+  background-image: url(/imgs/crack.jpg);
+  background-attachment: fixed;
+}
+
+.header {
+  padding: 15px;
+  font-size: 15px;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+
+/* footer things */
+.footer {
+  position: relative; 
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: fuchsia;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+#myBtn:hover {
+  background-color: rgb(203, 4, 203);
+}
+
+.fa {
+  padding: 20px;
+  font-size: 15px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 20%;
+  display: flex;
+  justify-content: space-between;
+}
+.fa:hover {
+  opacity: 0.7;
+}
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+.fa-twitter {
+  background-color: #55acee;
+  color: white;
+}
+.fa-instagram {
+  background-color: #d70ade;
+  color: white;
+}
+.fa-linkedin {
+  background-color: #55acee;
+  color: white;
+}
+
+.homepage {
+  margin: 20px;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  justify-content: center;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 20px;
+}
+.pic-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 40%;
+  padding: 20px;
+  height: 200px;
+  margin: 30px;
+  margin-right: 30px;
+  margin-bottom: 70px;
+  line-height: 2;
+}
+
+.about-me {
+  display: flex;
+  flex-wrap: wrap;
+  float: right;
+  width: 45%;
+  padding: 20px;
+  height: 475px;
+  margin: 30px;
+  margin-right: 30px;
+  margin-bottom: 70px;
+  background-color: #fede00;
+  line-height: 2;
+} 
+
+ul {
+  list-style-type: none;
+}
+
+
+/* contact box */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid purple;
+  border-radius: 20px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: fuchsia;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: rgb(203, 4, 203);
+}
+
+.text-container {
+  margin: 30px;
+  margin-top: 100%;
+  border-radius: 5px;
+  background-color: purple;
+  padding: 20px;
+  padding-bottom: 40px;
+}
+
+
+/* section */
+.section {
+  padding: 5rem 0;
+}
+
+.section-center {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+@media screen and (min-width: 992px) {
+  .section-center {
+    width: 95vw;
+  }
+}
+main {
+  min-height: 100vh;
+  display: flex;
+  place-items: center;
+}
+
+/* NavBar */
+.topnav {
+  background-color: fuchsia;
+  overflow: hidden;
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a:hover {
+  background-color: white;
+  color: black;
+}
+.topnav a.active {
+  background-color: black;
+  color: white;
+}
+.topnav .icon {
+  float: right;
+}
+.logo {
+  float: left;
+  display: block;
+  width: 10%;
+  padding: 10px;
+}
+
+/* Responsive */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.repsonsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
